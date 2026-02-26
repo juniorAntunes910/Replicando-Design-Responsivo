@@ -1,68 +1,82 @@
-📱 Atividade Prática — Design Responsivo (Mobile First)
+💼 TalentHive — Landing Page Responsiva (Mobile First)
 
-Projeto desenvolvido para a atividade prática de Front-End, com foco em HTML5, CSS3, abordagem Mobile First e uso de variáveis CSS.
+Projeto desenvolvido para a atividade prática de Front-End com foco em Mobile First, HTML5, CSS3 e uso de variáveis CSS.
 
-🎯 Objetivo
+O layout replica o design proposto no Figma, simulando uma landing page moderna para um aplicativo de busca de empregos.
 
-Replicar fielmente o design disponibilizado no Figma, aplicando:
+🎯 Objetivo da Atividade
 
-✅ Estrutura semântica com HTML5
+Construir o front-end fiel ao design fornecido, aplicando:
 
-✅ Estilização com CSS3
+✅ Abordagem Mobile First
 
-✅ Conceito Mobile First
+✅ Layout Responsivo (Mobile → Tablet → Desktop)
 
-✅ Uso de CSS Variables (:root)
+✅ Variáveis CSS
 
-✅ Layout responsivo (Mobile, Tablet e Desktop)
+✅ Estrutura semântica
 
-Design base:
+✅ Boas práticas de organização
 
-Layout desenvolvido a partir do protótipo disponibilizado no Figma pelo professor.
+🖌 Sobre o Design
+
+O layout representa uma landing page de aplicativo chamada TalentHive, contendo:
+
+Hero Section com destaque principal
+
+Mockups do aplicativo
+
+Seção explicativa com vídeo
+
+Seção de benefícios
+
+Footer com CTA (Call To Action)
+
+A estrutura foi desenvolvida pensando primeiro na versão mobile e depois expandida para telas maiores.
 
 🧠 Conceitos Aplicados
-📌 Mobile First
+📱 Mobile First
 
-O projeto foi desenvolvido iniciando pela versão mobile e posteriormente adaptado para telas maiores utilizando:
+O projeto foi iniciado pela versão mobile e adaptado para telas maiores utilizando media queries baseadas em min-width.
 
-@media (min-width: 768px) { }
+Exemplo:
+
+@media (min-width: 768px) {
+  /* ajustes para tablet */
+}
+
+@media (min-width: 1024px) {
+  /* ajustes para desktop */
+}
 🎨 Variáveis CSS
 
-As cores, tipografia e espaçamentos foram padronizados utilizando variáveis:
+Para manter consistência visual e facilitar manutenção, foram utilizadas variáveis no :root:
 
 :root {
-  --color-bg: #0b0b0b;
-  --color-primary: #ffe082;
-  --color-card: #292828;
-  --color-text: #fafafa;
+  --color-primary: #4f7cff;
+  --color-secondary: #f5f5f5;
+  --color-dark: #111111;
+  --color-light: #ffffff;
 
   --font-primary: 'Inter', sans-serif;
-  --font-title: 'Oswald', sans-serif;
 
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
 }
-
-Isso facilita manutenção e escalabilidade do projeto.
-
-📂 Estrutura do Projeto
-📁 projeto
+🏗 Estrutura do Projeto
+📁 talenthive
  ├── index.html
  ├── style.css
  ├── 📁 assets
+ │     ├── images
+ │     └── icons
  └── README.md
-📱 Responsividade
+🛠 Tecnologias Utilizadas
 
-O layout foi adaptado para:
+HTML5
 
-📲 Mobile (base do projeto)
-
-📟 Tablet
-
-💻 Desktop
-
-Principais técnicas utilizadas:
+CSS3
 
 Flexbox
 
@@ -70,7 +84,25 @@ CSS Grid
 
 Media Queries
 
-Unidades relativas (rem, %, fr)
+Google Fonts
+
+📱 Responsividade
+
+O layout foi testado nos seguintes breakpoints:
+
+📲 375px (Mobile)
+
+📟 768px (Tablet)
+
+💻 1024px+ (Desktop)
+
+O comportamento esperado:
+
+Mobile → Layout em coluna
+
+Tablet → Ajustes intermediários
+
+Desktop → Layout em múltiplas colunas
 
 🚀 Como Executar
 
@@ -80,13 +112,12 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 
 Abra o arquivo index.html no navegador.
 
-📦 Entrega
+📦 Forma de Entrega
 
-O projeto pode ser entregue:
+Arquivo .zip
+ou
 
-Compactado em .zip
-
-Ou através do link do GitHub
+Link do repositório no GitHub
 
 👨‍💻 Autor
 
@@ -95,9 +126,9 @@ Junior Gabriel Antunes de Souza
 GitHub:
 https://github.com/juniorAntunes910
 
-✅ Status
+✅ Status do Projeto
 
-✔️ Layout Responsivo
-✔️ Mobile First aplicado
-✔️ Variáveis CSS utilizadas
-✔️ Estrutura organizada
+✔️ Layout responsivo implementado
+✔️ Mobile First aplicado corretamente
+✔️ Variáveis CSS organizadas
+✔️ Estrutura limpa e semântica
