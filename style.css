@@ -11,7 +11,9 @@
     --main-color: #3778FA;
     --font-logo: "Space Grotesk", sans-serif;
     --font-logo-weight: 500;
+    --font-important-title: 600;
     --font-logo-size: 20px;
+    --font-important-title-size: 2.875rem;
 
 }
 
@@ -38,7 +40,22 @@
 }
 
 
-
-
-
 /*End of the Header*/
+
+/* Top-Content */
+
+#top-content{
+    display: flex;
+    justify-content: center;
+}
+
+#top-content-title{
+    margin-top: 3.563rem; 
+    text-align: center;
+    font-family: var(--font-logo);
+    font-weight: var(--font-important-title);
+    font-size: var(--font-important-title-size);
+
+}
+
+/* End of Top-Content */ 
