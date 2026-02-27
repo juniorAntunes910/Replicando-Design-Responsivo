@@ -13,8 +13,10 @@
     --font-logo-weight: 500;
     --font-important-title: 600;
     --font-logo-size: 20px;
-    --font-important-title-size: 2.875rem;
-
+    --font-important-line-height: 3.5rem;
+    --font-important-letter-spacing: -0.08rem;
+    --font-important-title-size: 3.2rem;
+    --font-titles: 1.875rem;
 }
 
 /* End of var */
@@ -46,16 +48,79 @@
 
 #top-content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #top-content-title{
-    margin-top: 3.563rem; 
+    margin: 3.5rem 2.3rem 1.3rem 2.3rem;
     text-align: center;
     font-family: var(--font-logo);
     font-weight: var(--font-important-title);
     font-size: var(--font-important-title-size);
-
+    line-height: var(--font-important-line-height);
+    letter-spacing: var(--font-important-letter-spacing);
+    max-width: 360px ;
 }
 
+.top-content-description{
+    text-align: center;
+    margin-bottom: 6.5rem;
+}
+
+.top-content-box-img{
+    width: 388px;
+    height: 207px;
+    background-color: #222222;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: visible;
+    margin-left: 1.25rem;
+    margin-bottom: 6.875rem;
+}
+
+.top-content-box-img img{
+    width: 360px;
+    margin-bottom: 2rem;
+    transform: rotateY(-40px);
+}
 /* End of Top-Content */ 
+
+/* Start of midleo-video */
+
+#midle-video{
+    display: flex;
+}
+
+#video{
+    text-align: center;
+    font-family: var(--font-logo);
+    font-weight: var(--font-important-title);
+    font-size: var(--font-titles);
+    letter-spacing: var(--font-important-letter-spacing);
+    line-height: var(--font-important-line-height);
+}
+
+#video img{
+    margin: 2.188rem 1.25rem 6.844rem 1.25rem;
+}
+
+/* End of midleo-video*/
+
+/* Common Question */
+#common-question{
+    display: flex;
+}
+
+.common-question-box h3{
+    margin: 0 5.75rem 1.813rem 5.75rem;
+    text-align: center;
+    font-family: var(--font-logo);
+    font-weight: var(--font-important-title);
+    font-size: var(--font-titles);
+    line-height: var(--font-important-line-height);
+    letter-spacing: var(--font-important-letter-spacing);
+}
+
